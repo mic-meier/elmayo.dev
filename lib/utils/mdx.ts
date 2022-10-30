@@ -52,7 +52,7 @@ export async function getAllArticles() {
     const [slug, _extension] = fileName.split('.')
 
     if (process.env.NODE_ENV === 'production') {
-      if (data.pusblished) {
+      if (data.published) {
         const frontMatter: FrontMatter = {
           title: data.title,
           publishedAt: data.publishedAt,
